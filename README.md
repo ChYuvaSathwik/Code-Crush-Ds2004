@@ -1,4 +1,4 @@
-125. Valid Palindrome
+Valid Palindrome
 Solved
 Easy
 Topics
