@@ -1,0 +1,10 @@
+class Solution:
+    def removeDuplicates(self, nums: List[int]) -> int:
+        sathwik=nums.copy()
+        k=[]
+        for i in range(len(sathwik)):
+            if sathwik[i] not in k:
+                k.append(sathwik[i])
+        for j in range(len(k)):
+            nums[j]=k[j]
+        return len(k
