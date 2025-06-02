@@ -1,0 +1,17 @@
+class Solution:
+    def sortArray(self, nums: List[int]) -> List[int]:
+        nums1 = len(nums)
+        for i in range(nums1):
+            swapped = False
+            for j in range(0, nums1 - i - 1):
+                if nums[j] > nums[j + 1]:
+                    nums[j], nums[j + 1] = nums[j + 1], nums[j]
+                    swapped = True
+            if not swapped:
+                break  
+        return nums
+"""
+class Solution:
+    def sortArray(self, nums: List[int]) -> List[int]:
+        Z=sorted(nums,reverse=False)
+        return Z"""
