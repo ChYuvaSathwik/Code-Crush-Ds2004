@@ -1,0 +1,10 @@
+class Solution:
+    def sortedSquares(self, nums: List[int]) -> List[int]:
+        N=[]
+        for i in range(len(nums)):
+            Z=nums[i]**2
+            N.append(Z)
+        N=sorted(N,reverse=False)
+        return N
+                
+        
