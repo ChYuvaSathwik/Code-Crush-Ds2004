@@ -1,0 +1,17 @@
+numbers = [5, 12, 305]
+
+result = []
+
+for num in numbers:
+    product = 1
+    temp = num
+    if temp == 0:
+        product = 0
+    else:
+        while temp > 0:
+            digit = temp % 10
+            product *= digit
+            temp //= 10
+    result.append(product)
+
+print("Output:", result)
