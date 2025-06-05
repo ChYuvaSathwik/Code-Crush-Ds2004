@@ -1,0 +1,12 @@
+numbers = [10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+
+for num in numbers:
+    if num < 2:
+        continue
+    is_prime = True
+    for i in range(2, int(num ** 0.5) + 1):
+        if num % i == 0:
+            is_prime = False
+            break
+    if is_prime:
+        print(num, end=" ")
