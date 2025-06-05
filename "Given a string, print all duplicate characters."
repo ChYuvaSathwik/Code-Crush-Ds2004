@@ -1,0 +1,10 @@
+hi="aabbccaaddaa"
+K=[]
+L=[]
+for i in range(len(hi)):
+    if hi[i] in K:
+        if hi[i] not in L:
+            L.append(hi[i])
+    else:
+        K.append(hi[i])
+print(L)
