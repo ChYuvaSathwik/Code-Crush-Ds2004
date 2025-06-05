@@ -1,0 +1,9 @@
+s = "abca"
+seen = []
+
+for ch in s:
+    if ch in seen:
+        print("First duplicate:", ch)
+        break
+    else:
+        seen.append(ch)
