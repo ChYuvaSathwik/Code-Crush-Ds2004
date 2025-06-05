@@ -1,0 +1,25 @@
+N = "aa a234bc@ sad$ hsagd^"
+count = 0
+
+for ch in N:
+    if ('0' <= ch <= '9') or ('a' <= ch <= 'z') or ('A' <= ch <= 'Z'):
+        pass   
+    elif ch == ' ':
+        count += 1  
+    else:
+        count += 1  
+
+print(count)  # Output will be 6
+
+
+
+N = "aa a234bc@ sad$ hsagd^"
+count = 0
+
+for ch in N:
+    if ch.isalnum():
+        pass
+    else:
+        count += 1
+
+print(count)  # Output: 6
