@@ -1,0 +1,11 @@
+hi=[1, 2, 3, 2, 4, 1, 5]
+K=[]
+L=[]
+for i in range(len(hi)):
+    if hi[i] in K:
+        if hi[i] not in L:
+            L.append(hi[i])
+    else:
+        K.append(hi[i])
+
+print(L)
