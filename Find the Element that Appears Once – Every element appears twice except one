@@ -1,0 +1,23 @@
+arr = [1, 1, 2, 2, 3, 4, 4]
+count = {}
+
+for num in arr:
+    if num in count:
+        count[num] += 1
+    else:
+        count[num] = 1
+
+for num in arr:
+    if count[num] == 1:
+        print(num)
+        break
+
+using Xor
+
+arr = [1, 1, 2, 2, 3, 4, 4]
+result = 0
+
+for num in arr:
+    result ^= num
+
+print(result)
