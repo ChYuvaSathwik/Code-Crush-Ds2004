@@ -1,0 +1,11 @@
+arr = [10, 50, 30, 40]
+first = second = float('-inf')
+
+for num in arr:
+    if num > first:
+        second = first
+        first = num
+    elif first > num > second:
+        second = num
+
+print(second)
