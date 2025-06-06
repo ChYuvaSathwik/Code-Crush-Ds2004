@@ -1,0 +1,9 @@
+arr = [10, 11, 12, 14, 15]
+
+start = min(arr)
+end = max(arr)
+
+for i in range(start, end + 1):
+    if i not in arr:
+        print("Missing number is:", i)
+        break
