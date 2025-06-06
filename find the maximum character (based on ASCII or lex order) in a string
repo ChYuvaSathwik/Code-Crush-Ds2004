@@ -1,0 +1,9 @@
+s = "hello world"
+
+max_char = s[0]  # start with first character
+
+for ch in s:
+    if ch > max_char:
+        max_char = ch
+
+print("Maximum character:", max_char)
