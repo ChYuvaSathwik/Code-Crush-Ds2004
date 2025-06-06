@@ -1,0 +1,22 @@
+s = "Abcdef123dechd456"
+
+max_num = 0  # to store the maximum number found
+temp = ""    # to store digits as we find them
+
+for ch in s:
+    if ch.isdigit():
+        temp += ch  # build the current number as string
+    else:
+        if temp != "":
+            num = int(temp)  # convert collected digits to number
+            if num > max_num:
+                max_num = num
+            temp = ""  # reset temp for next number
+
+# Check last number if string ends with digits
+if temp != "":
+    num = int(temp)
+    if num > max_num:
+        max_num = num
+
+print(max_num)
