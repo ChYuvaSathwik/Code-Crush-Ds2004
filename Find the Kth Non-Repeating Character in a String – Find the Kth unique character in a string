@@ -1,0 +1,22 @@
+s = "geeksforgeeks"
+k = 2
+
+freq = {}
+
+# Count frequency of each character
+for ch in s:
+    if ch in freq:
+        freq[ch] += 1
+    else:
+        freq[ch] = 1
+
+count = 0
+# Find kth non-repeating character
+for ch in s:
+    if freq[ch] == 1:
+        count += 1
+        if count == k:
+            print(ch)
+            break
+else:
+    print("No such character")
