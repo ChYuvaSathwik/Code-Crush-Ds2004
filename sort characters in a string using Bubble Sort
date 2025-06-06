@@ -1,0 +1,11 @@
+s = "hello"
+chars = list(s)  # Convert string to list for mutability
+
+n = len(chars)
+for i in range(n):
+    for j in range(0, n - i - 1):
+        if chars[j] > chars[j + 1]:
+            chars[j], chars[j + 1] = chars[j + 1], chars[j]
+
+sorted_s = ''.join(chars)  # Convert list back to string
+print(sorted_s)
