@@ -1,0 +1,13 @@
+s = "Mississippi"
+s = s.lower()  # Optional: ignore case
+
+freq = {}
+
+for ch in s:
+    if ch in freq:
+        freq[ch] += 1
+    else:
+        freq[ch] = 1
+
+most_frequent = max(freq, key=freq.get)
+print(most_frequent)
