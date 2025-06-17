@@ -1,0 +1,5 @@
+from word2number import w2n
+
+Z = "Five Hundred Thousand"
+num = w2n.word_to_num(Z)
+print(num)  # Output: 500000
