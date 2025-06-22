@@ -1,0 +1,37 @@
+Given the number of employees N, take input for each employee:
+
+Roll Number
+
+Hours Worked
+
+Cost Per Hour
+
+Calculate and print the Total Salary for each employee.
+
+✅ Python Code:
+python
+Copy
+Edit
+N = int(input("Enter number of employees: "))
+for _ in range(N):
+    roll, hours, cost = input().split()
+    hours = int(hours)
+    cost = int(cost)
+    total = hours * cost
+    print(f"Roll No: {roll}, Total Salary: {total}")
+👨‍💻 User Input (Example for N = 3):
+typescript
+Copy
+Edit
+Enter number of employees: 3
+101 5 100
+102 8 90
+103 4 120
+✅ Output:
+
+yaml
+Copy
+Edit
+Roll No: 101, Total Salary: 500
+Roll No: 102, Total Salary: 720
+Roll No: 103, Total Salary: 480
