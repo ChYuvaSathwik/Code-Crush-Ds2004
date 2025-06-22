@@ -1,0 +1,12 @@
+A="HELLOSATHWIKHOWAREU"
+Letters=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","V","W","X","Y","Z"]
+M=""
+b=0
+for i in range(len(Letters)):
+    if b<len(A):
+        if Letters[i]!=A[b]:
+            M=M+Letters[i]
+            b=b+1
+        else:
+            b=b+1
+print(M)
