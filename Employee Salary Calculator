@@ -1,0 +1,7 @@
+N = int(input("Enter number of employees: "))
+for _ in range(N):
+    roll, hours, cost = input().split()
+    hours = int(hours)
+    cost = int(cost)
+    total = hours * cost
+    print(f"Roll No: {roll}, Total Salary: {total:.2f}")
