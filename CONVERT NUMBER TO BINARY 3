@@ -1,0 +1,33 @@
+FIRST METHOD
+num = 10
+print(bin(num)[2:])
+print(binary) 
+
+SECOND METHOD
+num = int(input("Enter a number: "))
+binary = format(num, 'b')
+print("Binary representation:", binary)
+
+THIRD METHOD
+num = 10
+binary = ""
+while num > 0:
+    binary = str(num % 2) + binary
+    num = num // 2
+print(binary)  # Output: 1010
+
+ALL CONVERTIONS
+num = int(input("Enter a number: "))
+binary = format(num, 'b')   # binary
+octal = format(num, 'o')    # octal
+hexa = format(num, 'x')     # hexadecimal (lowercase)
+hexa_upper = format(num, 'X')  # hexadecimal (uppercase)
+
+# Print results
+print("Decimal     :", num)
+print("Binary      :", binary)
+print("Octal       :", octal)
+print("Hexadecimal :", hexa_upper) #BRO HERE ONLY HEXA CAN SUPPORT BOTH UPPER CASE AND LOWER CASE IMPORTANT
+
+
+
