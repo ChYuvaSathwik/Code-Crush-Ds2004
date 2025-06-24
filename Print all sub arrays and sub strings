@@ -1,0 +1,8 @@
+Z = [1, 2, 3, 4, 5]
+for i in range(len(Z)):
+    for k in range(i, len(Z)):
+        print(Z[i:k+1])
+Z="Sathwik"
+for i in range(len(Z)):
+    for k in range(i,len(Z)):
+        print(Z[i:k+1])
