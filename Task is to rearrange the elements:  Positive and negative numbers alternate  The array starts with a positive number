@@ -1,0 +1,24 @@
+A=[1,2,3,-4,-1,4]
+Pos=[]
+Neg=[]
+p=0
+new_list=[]
+for i in range(len(A)):
+    if A[i]>=0:
+        Pos.append(A[i])
+    else:
+        Neg.append(A[i])
+        
+l=max(len(Pos),len(Neg))
+
+for k in range(l):
+    if k<len(Pos):
+        new_list.append(Pos[k])
+    if k<len(Neg):
+        new_list.append(Neg[k])
+print(new_list)
+        
+    
+"""pos=[1,2,3,4]"""
+"""neg=[-4,-1]"""
+"""output=[1,-4,2,-1,3,4]"""
