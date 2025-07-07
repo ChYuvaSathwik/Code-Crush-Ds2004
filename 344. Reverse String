@@ -1,0 +1,10 @@
+class Solution:
+    def reverseString(self, s: List[str]) -> None:
+        sathwik=0
+        Praneeth=len(s)-1
+        while sathwik<=Praneeth:
+            s[sathwik],s[Praneeth]=s[Praneeth],s[sathwik]
+            sathwik=sathwik+1
+            Praneeth=Praneeth-1
+        
+        
