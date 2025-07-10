@@ -1,0 +1,19 @@
+class Solution:
+    def intersect(self, nums1: List[int], nums2: List[int]) -> List[int]:
+        if len(nums1)>len(nums2):
+            nums1,nums2=nums2,nums1
+        sathwik={}
+        for num in nums1:
+            if num in sathwik:
+                sathwik[num]=sathwik[num]+1
+            else:
+                sathwik[num]=1
+        Balu=[]
+        for j in nums2:
+            if j in sathwik and sathwik[j]>0:
+                Balu.append(j)
+                sathwik[j]=sathwik[j]-1
+        return Balu
+
+            
+
