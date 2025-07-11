@@ -1,0 +1,16 @@
+class Solution:
+    # @param A : tuple of integers
+    # @return a list of integers
+    def repeatedNumber(self, A):
+        sathwik={}
+        NEW=[]
+        for num in A:
+            sathwik[num] = sathwik.get(num, 0) + 1
+        for P in sathwik:
+            if sathwik[P]==2:
+                NEW.append(P)
+        N=set(A)
+        for i in range(1,len(A)+1):
+            if i not in N:
+                NEW.append(i)
+        return NEW
