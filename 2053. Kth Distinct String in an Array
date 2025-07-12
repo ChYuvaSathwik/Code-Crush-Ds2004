@@ -1,0 +1,18 @@
+class Solution:
+    def kthDistinct(self, arr: List[str], k: int) -> str:
+        sathwik={}
+        N=[]
+        for num in arr:
+            if num in sathwik:
+                sathwik[num]=sathwik[num]+1
+            else:
+                sathwik[num]=1
+        for m in sathwik:
+            if sathwik[m]==1:
+                N.append(m)
+        if len(N)>=k:
+            C=N[k-1]
+            return C
+        else:
+            return ""
+            
