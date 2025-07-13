@@ -1,0 +1,22 @@
+lists = [[1, 4, 5], [1, 3, 4], [2, 6]]
+sathwik = []
+
+for sublist in lists:
+    for val in sublist:
+        sathwik.append(val)
+
+Papa = sorted(sathwik)
+print(Papa)
+
+
+
+lists = [[1, 4, 5], [1, 3, 4], [2, 6]]
+i = 0
+sathwik = []
+
+while i < len(lists):     
+    for m in lists[i]:    
+        sathwik.append(m)
+    i += 1                
+Papa1 = sorted(sathwik)
+print(Papa)
