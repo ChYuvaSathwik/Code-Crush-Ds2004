@@ -1,0 +1,22 @@
+class Solution:
+    def numberGame(self, nums: List[int]) -> List[int]:
+        import heapq
+        M=[]
+        N=len(nums)
+        heapq.heapify(nums)
+        for _ in range(N//2):
+            D=heapq.heappop(nums)
+            S=heapq.heappop(nums)
+            M.append(S)
+            M.append(D)
+            
+        return M
+        """
+        import heapq
+        sathwik=[]
+        while nums:
+            Praneeth=heapq.heappop(nums)
+            Balu=heapq.heappop(nums)
+            sathwik.append(Balue)
+            sathwik.append(Praneeth)
+        return Sathwik
