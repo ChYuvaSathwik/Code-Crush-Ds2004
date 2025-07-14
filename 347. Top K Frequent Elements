@@ -1,0 +1,32 @@
+import heapq
+class Solution:
+    def topKFrequent(self, nums: List[int], k: int) -> List[int]:
+        new=[]
+        heapq.heapify(new)
+        sathwik={}
+        for num in nums:
+            sathwik[num]=sathwik.get(num,0)+1
+        for first,last in sathwik.items():
+            heapq.heappush(new,(last,first))
+"""import heapq
+
+nums = [1, 1, 1, 2, 2, 3]
+k = 2
+
+freq = {}
+for num in nums:
+    freq[num] = freq.get(num, 0) + 1
+
+heap = []
+for num, count in freq.items():
+    heapq.heappush(heap, (count, num))
+    if len(heap) > k:
+        heapq.heappop(heap)
+
+result = []
+while heap:
+    result.append(heapq.heappop(heap)[1])
+
+result = result[::-1]
+print(result)
+"""
