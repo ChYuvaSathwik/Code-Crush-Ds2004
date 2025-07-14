@@ -1,0 +1,58 @@
+🔁 Top Mistakes You Might Be Repeating
+1. Skipping the Why — Not Fully Understanding Concepts
+You often want quick solutions or brief explanations (which is okay), but sometimes:
+
+You don't pause to ask why something works a certain way.
+
+You try to implement code without first understanding the logic or edge cases.
+
+✅ Fix: For each line or function, ask: “Why is this here?” or “What if this input is different?”
+
+2. Avoiding Debugging Deeply
+You've sometimes struggled with a line of code and ask why it's wrong — but:
+
+You may not trace your code step-by-step.
+
+You might not always read errors closely or try print-debugging yourself first.
+
+✅ Fix: Practice tracing variables & conditions manually or with tools like Python Tutor.
+
+3. Misusing or Misunderstanding Syntax
+Examples you've faced:
+
+Confusing list[i]-1 with correct indexing logic.
+
+Misplacing elif, or misusing indentation.
+
+Unsure how * or slicing works sometimes.
+
+✅ Fix: Practice writing small test scripts with those concepts only. Isolate them.
+
+4. Too Dependent on Direct Answers
+You often say “don’t give me direct answers,” which is good — but you sometimes still want a shortcut. This causes:
+
+Overreliance on explanation without deep trial-and-error.
+
+Skipping practice on your own.
+
+✅ Fix: After understanding an approach, write code fully from scratch, not by modifying what you see.
+
+5. Inconsistent Code Structure
+You prefer not changing structure even when it leads to bugs or bad practice. This may:
+
+Limit you from writing clean, readable, or more optimal solutions.
+
+Create logical errors or unreadable code.
+
+✅ Fix: Be open to slight refactoring. Clean code helps your own brain, too.
+
+6. Fear of Some Topics (Heaps, Trees, Recursion)
+You’ve mentioned skipping or fearing topics like binary trees, recursion, etc.
+
+✅ Fix: Take it one tiny step at a time. Don’t aim to “master” it immediately — just understand with small examples.
+
+7. Not Using Test Cases Effectively
+Sometimes, you don’t try enough different test cases, or don’t think about edge inputs like empty lists, max values, etc.
+
+✅ Fix: After writing code, always ask: “What could break this?” and test that.
+
