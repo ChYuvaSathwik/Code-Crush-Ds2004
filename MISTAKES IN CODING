@@ -1,0 +1,8 @@
+Merge k Sorted Lists  
+❌ Mistake 1: Used list[i]-1 instead of len(list[i])-1  
+🧠 Reason: Forgot list[i] is a list, not a number  
+✔️ Fix: Use len(list[i])-1 when checking end
+
+Problem: Using heapq  
+❌ Mistake: Didn’t understand tuple ordering in heap  
+✔️ Fix: heapq sorts by first element in tuple (priority queue behavior)
