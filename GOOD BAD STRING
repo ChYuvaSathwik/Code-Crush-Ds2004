@@ -1,0 +1,22 @@
+A="SSAATTJJ"                         "GOOD STRING MEANS ALL HAVING EQUAL CHARS if it is not equal it is a bad string"
+sathwik={}
+TR=True
+c=[]
+for num in A:
+    sathwik[num]=sathwik.get(num,0)+1
+for hi in sathwik:
+    c.append(sathwik[hi])
+start=0
+last=len(c)-1
+for i in range(len(c)):
+    if c[start]==c[last]:
+        TR=True
+        start=start+1
+        last=last-1
+    else:
+        TR=False
+        break
+if TR:
+    print("GOOD STRING")
+else:
+    print("BAD STRING")
