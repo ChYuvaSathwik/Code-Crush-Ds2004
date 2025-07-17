@@ -1,0 +1,10 @@
+Z=123
+P=9
+Z=str(Z)
+sathwik="0"
+for num in Z:
+    sathwik=int(num)+int(sathwik)
+if sathwik==P:
+    print("YES")
+else:
+    print("NO")
