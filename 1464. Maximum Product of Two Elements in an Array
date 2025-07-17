@@ -8,7 +8,26 @@ class Solution:
                     M=max(sum1,M)
         return M
         
+"""BY USING HEAP"""
+class Solution:
+    def maxProduct(self, nums: List[int]) -> int:
+        M=float("-inf")
+        S=[]
+        K=[]
+        for i in range(len(nums)):
+            for j in range(len(nums)):
+                if i!=j:
+                    sum1=(nums[i]-1)*(nums[j]-1)
+                    S.append(sum1)
+        import heapq
+        for num in S:
+            K.append(-num)
+        heapq.heapify(K)
+        Z=-heapq.heappop(K)
+        return Z
 
+
+            
 
 
         
