@@ -1,0 +1,16 @@
+class Solution:
+    def sumOfUnique(self, nums: List[int]) -> int:
+        sathwik={}
+        UNQ=[]
+        C=0
+        for i in nums:
+            sathwik[i]=sathwik.get(i,0)+1
+        for j in sathwik:
+            if sathwik[j]==1:
+                UNQ.append(j)
+        for Y in UNQ:
+            C=Y+C
+        return C
+        
+
+        
