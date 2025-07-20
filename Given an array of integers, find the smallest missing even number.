@@ -1,0 +1,16 @@
+A=5
+t=0
+r=True
+input1=[2,4,6,8,12]
+input1.sort()
+e=len(input1)-1
+s=[]
+for i in range(input1[0],input1[e]+2,2):
+    s.append(i)
+for num in input1:
+    if num==s[t]:
+        t=t+1
+    else:
+        r=False
+        break
+print(input1[t-1]+2)
