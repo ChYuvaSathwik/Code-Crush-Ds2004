@@ -1,0 +1,11 @@
+a = 4
+b = 9
+
+if a > b:
+    a, b = b, a
+
+M = 0
+for i in range(a, b + 1):
+    M = M + i**3
+
+print(M)
