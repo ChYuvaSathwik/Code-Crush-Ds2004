@@ -1,0 +1,26 @@
+A=[1,2,3,5,2]
+target=8
+Praneeth=False
+for i in range(len(A)-1): 
+    C=A[i:i+2]
+    Z=sum(C)
+    if Z==target:
+        Praneeth=True
+        break
+    elif Z!=target:
+        C=0
+if Praneeth:
+    print(True)
+else:
+    print(False)
+
+     (or)
+
+A = [1, 2, 3, 5, 2]
+target = 8
+Praneeth = False
+for i in range(len(A) - 1):  
+    if A[i] + A[i+1] == target:
+        Praneeth = True
+        break
+print(Praneeth)
