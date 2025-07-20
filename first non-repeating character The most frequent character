@@ -1,0 +1,13 @@
+Input1="swadesh"
+sathwik={}
+Result=[]
+Final_count=[]
+for i in Input1:
+    sathwik[i]=sathwik.get(i,0)+1
+for m in sathwik:
+    if sathwik[m]==1:
+        Result.append(m)
+        break
+Balu=max(sathwik,key=sathwik.get)
+OK="".join(Result)
+print(OK,Balu)
