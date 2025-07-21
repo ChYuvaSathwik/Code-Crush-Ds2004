@@ -1,0 +1,70 @@
+"""Temperature Classifier + Average
+Given two temperatures, classify each based on the following:
+
+If temperature < 10 → "it's very cool"
+
+If 10 ≤ temperature ≤ 20 → "it's cold"
+
+If temperature > 20 → "it's warm"
+
+Then:
+✅ Print the category for each temperature
+✅ Print their average (as a double)
+✅ Print both temperatures in reverse order
+
+Example Input:
+input1: 5 25
+
+Example Output:
+it's very cool, it's warm, 15.0, 25, 5"""
+l1,l2=map(int,input().split())
+hi=[]
+m1=[]
+if l1<10:
+    Z1="it's very cool"
+    hi.append(Z1)
+elif 10<=l1<=20:
+    Z2="it's cold"
+    hi.append(Z2)
+else:
+    Z3="it's warm"
+    hi.append(Z3)
+if l2<10:
+    p1="it's very cool"
+    m1.append(p1)
+elif 10<=l2<=20:
+    p2="it's cold"
+    m1.append(p2)
+else:
+    p3="it's warm"
+    m1.append(p3)
+C="".join(hi)
+C1="".join(m1)
+average=(l1+l2)/2
+Y=[]
+print(f"{C},{C1},{average},{l2},{l1}")
+"""now optimed code
+l1, l2 = map(int, input().split())
+
+
+if l1 < 10:
+    c1 = "it's very cool"
+elif 10 <= l1 <= 20:
+    c1 = "it's cold"
+else:
+    c1 = "it's warm"
+
+if l2 < 10:
+    c2 = "it's very cool"
+elif 10 <= l2 <= 20:
+    c2 = "it's cold"
+else:
+    c2 = "it's warm"
+
+
+average = (l1 + l2) / 2
+
+
+print(f"{c1}, {c2}, {average}, {l2}, {l1}")"""
+
+
