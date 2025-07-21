@@ -1,0 +1,32 @@
+"""Given a sentence, find and return the first word that:
+
+Has an even number of letters.
+
+Starts with a vowel (a, e, i, o, u).
+
+If no such word exists, return "00"
+
+Examples:
+
+Input 1: The sun sets in the west
+Output 1: in
+
+Input 2: hello world
+Output 2: 00"""
+
+sathwik = "hello world"
+V = sathwik.split()
+vowels = ["a", "e", "i", "o", "u"]
+K = 0
+M = False
+
+for num in V:
+    if len(num) % 2 == 0 and num[0].lower() in vowels:
+        K = num
+        M = True
+        break
+
+if M:
+    print(K)
+else:
+    print("00")
