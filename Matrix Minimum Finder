@@ -1,0 +1,25 @@
+❓ Matrix Minimum Finder
+Given a matrix of size m x n:
+
+If m <= 0 or n <= 0, print:
+
+css
+Copy
+Edit
+invalid input
+Otherwise, read the matrix elements and print the smallest (minimum) number in the matrix.
+
+rows,cols=map(int,input().split())
+if rows<=0 and cols<=0:
+    print("invalid Input")
+else:
+    matrix=[]
+    for i in range(rows):
+        a=list(map(int,input().split()))
+        matrix.append(a)
+    u=[]
+    for h in matrix:
+        for l in h:
+            u.append(l)
+    print(min(u))
+
