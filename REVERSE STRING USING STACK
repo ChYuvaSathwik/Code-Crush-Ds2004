@@ -1,0 +1,6 @@
+S=list("abcde")
+stack=[]
+for i in range(len(S)):
+    P=S.pop()
+    stack.append(P)
+print("".join(stack))
