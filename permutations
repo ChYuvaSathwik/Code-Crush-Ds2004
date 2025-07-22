@@ -1,0 +1,13 @@
+from itertools import permutations
+
+S = "AABVP"
+perm = permutations(S)
+unique = []
+
+for p in perm:
+    word = "".join(p)
+    if word not in unique:
+        unique.append(word)
+
+print("Total unique permutations:", len(unique))
+print(unique)
