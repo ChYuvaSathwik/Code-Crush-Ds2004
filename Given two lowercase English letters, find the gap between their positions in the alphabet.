@@ -1,0 +1,8 @@
+sathwik="code"
+P=list(sathwik)
+V=0
+for i in range(len(P)-1):
+    C=ord(P[i])-ord(P[i+1])+1
+    N=abs(C)
+    V=V+N
+print(V)
