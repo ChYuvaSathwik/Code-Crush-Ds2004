@@ -1,0 +1,26 @@
+a,b,c,d=map(int,input().split())
+A1=b-a
+A2=c-b
+A3=d-c
+if A1<0 or A2<0 or A3<0:
+    print("Invalid")
+elif A1==A2 or A2==A3:
+    print(A2)
+else:
+    print("NONE")
+
+
+You are given the height of a tree over 4 consecutive weeks (4 numbers).
+
+You must:
+
+Calculate the difference in height between each week.
+
+Then based on the results:
+
+❌ If any height is negative, return: "Not valid inputs"
+
+✅ If any two differences are the same, return that common difference
+
+ℹ️ If all 3 differences are different, return: "None"
+
