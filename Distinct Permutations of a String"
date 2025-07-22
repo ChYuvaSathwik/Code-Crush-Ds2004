@@ -1,0 +1,15 @@
+import math
+Z="AABVP"
+set1=set()
+L=[]
+for num in Z:
+    if num not in set1:
+        set1.add(num)
+        L.append(num)
+print(L)
+M="".join(L)
+Z=math.factorial(len(M))
+print(Z)
+
+Given a string S, find the number of distinct permutations that can be formed using all characters of the string.
+If characters repeat, they should not be counted more than once for identical arrangements.
