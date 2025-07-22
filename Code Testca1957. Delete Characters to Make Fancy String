@@ -1,0 +1,40 @@
+class Solution:
+    def makeFancyString(self, s: str) -> str:
+        sathwik=[]
+        for num in s:
+            if len(sathwik)>=2 and sathwik[-1]==sathwik[-2]==num:
+                continue
+            else:
+                sathwik.append(num)
+        return "".join(sathwik)
+
+
+class Solution:
+    def makeFancyString(self, s: str) -> str:
+        sathwik=list(s[:2])
+        for i in range(2,len(s)):
+            if s[i]==sathwik[-1] and s[i]==sathwik[-2]:
+                continue
+            else:
+                sathwik.append(s[i])
+        return "".join(sathwik)
+
+  
+
+
+            
+
+
+
+        
+
+                
+
+
+
+
+
+
+
+
+        
