@@ -1,0 +1,16 @@
+class Solution:
+    def reversePrefix(self, word: str, ch: str) -> str:
+        HI=False
+        for i in range(len(word)):
+            if word[i]==ch:
+                HI=True
+                B=i
+                break
+        if HI:
+            A=word[:i+1]
+            Z=A[::-1]
+            H=word[i+1:]
+            HJ=Z+H
+            return HJ
+        else:
+            return word
