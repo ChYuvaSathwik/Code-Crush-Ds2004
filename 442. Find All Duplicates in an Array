@@ -1,0 +1,11 @@
+class Solution:
+    def findDuplicates(self, nums: List[int]) -> List[int]:
+        sathwik={}
+        NEW=[]
+        for num in nums:
+            sathwik[num]=sathwik.get(num,0)+1
+        for Praneeth in sathwik:
+            if sathwik[Praneeth]==2:
+                NEW.append(Praneeth)
+        return NEW
+        
