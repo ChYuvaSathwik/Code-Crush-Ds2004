@@ -14,3 +14,25 @@ class Solution:
             return HJ
         else:
             return word
+now using stack approch
+
+ def reversePrefix(self, word: str, ch: str) -> str:
+        HI=False
+        for i in range(len(word)):
+            if word[i]==ch:
+                HI=True
+                B=i
+                break
+        if HI:
+            stack=[]
+            C=list(word[:B+1])
+            for i in range(len(C)):
+                H=C.pop()
+                stack.append(H)
+            O="".join(stack)
+            RT=word[B+1:]
+            HJK=O+RT
+            return HJK
+        else:
+            return word 
+        
