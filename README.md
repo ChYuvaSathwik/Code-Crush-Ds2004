@@ -51,7 +51,7 @@ Edit
 - ✅ Day 1 - Solved with Two Pointers
 - ✅ Day 2 - Solved using Stack
 - ✅ Day 3 - Solved using Sliding Window
-- ✅ Day 3 - Solved using Heap
+- ✅ Day 4 - Solved using Heap
 - *(Continuing daily...)*
 
 ---
