@@ -1,0 +1,10 @@
+A=list(str(11223345))
+stack=[]
+stack.append(A[0])
+for i in range(1,len(A)):
+    if stack and A[i]==stack[-1]:
+        stack.append(A[i])
+        stack.pop()
+    else:
+        stack.append(A[i])
+print("".join(stack))
