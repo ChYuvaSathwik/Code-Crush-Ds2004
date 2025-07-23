@@ -31,6 +31,7 @@ Problems are picked and solved from various platforms:
 - [CodeChef](https://www.codechef.com/)
 - [HackerRank](https://www.hackerrank.com/)
 - [GeeksforGeeks](https://www.geeksforgeeks.org/)
+- Solved TCS Nqt,Prime
 - Others as applicable
 
 ## 📂 Folder Structure
@@ -50,6 +51,7 @@ Edit
 - ✅ Day 1 - Solved with Two Pointers
 - ✅ Day 2 - Solved using Stack
 - ✅ Day 3 - Solved using Sliding Window
+- ✅ Day 3 - Solved using Heap
 - *(Continuing daily...)*
 
 ---
