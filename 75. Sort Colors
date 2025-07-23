@@ -1,0 +1,17 @@
+class Solution:
+    def sortColors(self, nums: List[int]) -> None:
+        sathwik=0
+        praneeth=0
+        high=len(nums)-1
+        while praneeth<=high:
+            if nums[praneeth]==0:
+                nums[sathwik],nums[praneeth]=nums[praneeth],nums[sathwik]
+                sathwik=sathwik+1
+                praneeth=praneeth+1
+            elif nums[praneeth]==1:
+                praneeth=praneeth+1
+            else:
+                nums[praneeth],nums[high]=nums[high],nums[praneeth]
+                high=high-1
+            
+  
