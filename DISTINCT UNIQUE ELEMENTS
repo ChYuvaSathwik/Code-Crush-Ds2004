@@ -1,0 +1,9 @@
+sathwik=[10,20,20,10,30,10]
+Praneeth={}
+C=0
+for num in sathwik:
+    Praneeth[num]=Praneeth.get(num,0)+1
+for Abhi in Praneeth:
+    if Praneeth[Abhi]==1:
+        C=C+1
+print(C)
