@@ -1,0 +1,14 @@
+A="a1b2c3d4"
+letters=[]
+Numbers=[]
+L_N=[]
+for i in A:
+    if i.isalpha():
+        letters.append(i)
+    elif i.isdigit():
+        Numbers.append(i)
+M1="".join(letters)
+M2="".join(Numbers)
+L_N.append(M1)
+L_N.append(M2)
+print(L_N)
