@@ -1,0 +1,15 @@
+class Solution:
+    def repeatedCharacter(self, s: str) -> str:
+        sathwik=set()
+        for num in s:
+            if num in sathwik:
+                return num
+            sathwik.add(num)
+            
+
+
+
+
+
+
+        
