@@ -1,0 +1,11 @@
+class Solution:
+    def clearDigits(self, s: str) -> str:
+        stack=[]
+        for num in s:
+            if num.isdigit():
+                stack.pop()
+            else:
+                stack.append(num)
+        return "".join(stack)
+
+        
