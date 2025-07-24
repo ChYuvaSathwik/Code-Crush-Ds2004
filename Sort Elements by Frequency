@@ -1,0 +1,22 @@
+Given a list of integers, sort the elements based on their frequency in descending order.
+If multiple elements have the same frequency, sort them by their value in ascending order.
+
+A=[2,3,2,4,5,12,2,3,3,3,12]
+Final=[3,3,3,3,2,2,2,12,12,4,5]
+sathwik={}
+stax=[]
+M=[]
+for num in A:
+    sathwik[num]=sathwik.get(num,0)+1
+for k in sathwik:
+    M.append((sathwik[k],k))
+H = sorted(M, key=lambda x: (-x[0], x[1]))
+
+for i in range(len(H)):
+    C=H[i][0]
+    C1=H[i][1]
+    for S in range(C):
+        stax.append(C1)
+print(stax)
+
+
