@@ -1,0 +1,12 @@
+class Solution:
+    def maximumWealth(self, accounts: List[List[int]]) -> int:
+        sathwik=[]
+        C=0
+        for num in accounts:
+            for k in num:
+                C=C+k
+            sathwik.append(C)
+            C=0
+        return max(sathwik)
+
+        
