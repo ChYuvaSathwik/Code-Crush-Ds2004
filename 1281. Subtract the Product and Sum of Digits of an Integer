@@ -1,0 +1,12 @@
+class Solution:
+    def subtractProductAndSum(self, n: int) -> int:
+        sathwik=str(n)
+        H=1
+        H1=0
+        for num in sathwik:
+            H=int(num)*H
+            H1=int(num)+H1
+        F=H-H1
+        return F
+
+        
