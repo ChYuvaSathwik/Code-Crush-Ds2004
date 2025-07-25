@@ -1,0 +1,17 @@
+class Solution:
+    def smallerNumbersThanCurrent(self, nums: List[int]) -> List[int]:
+        sathwik=[]
+        Hi=0
+        for i in range(len(nums)):
+            for k in range(len(nums)):
+                if nums[i]>nums[k]:
+                    Hi=Hi+1
+                elif nums[i]==nums[k]:
+                    Hi=Hi+0
+            sathwik.append(Hi)
+            Hi=0
+        return sathwik
+
+                    
+
+        
