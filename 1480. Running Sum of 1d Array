@@ -1,0 +1,11 @@
+class Solution:
+    def runningSum(self, nums: List[int]) -> List[int]:
+        sathwik=[]
+        Y=0
+        for i in range(len(nums)):
+            X=sum(nums[:i+1])
+            sathwik.append(X)
+        return sathwik
+
+
+        
