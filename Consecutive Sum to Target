@@ -1,0 +1,14 @@
+sathwik=[1,2,3,5,2]
+target=8
+Praneeth=False
+for i in range(len(sathwik)):
+    C=sum(sathwik[i:i+2])
+    if C==target:
+        Praneeth=True
+        break
+if Praneeth:
+    print(True)
+else:
+    print(False)
+
+
