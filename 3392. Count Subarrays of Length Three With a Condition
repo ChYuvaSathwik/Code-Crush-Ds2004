@@ -1,0 +1,15 @@
+class Solution:
+    def countSubarrays(self, nums: List[int]) -> int:
+        sathwik=0
+        for i in range(len(nums)-2):
+            B=nums[i:i+3]
+            H=nums[i]+nums[i+3-1]
+            if nums[i+1]//2==H and nums[i+1]%2==0:
+                sathwik=sathwik+1
+
+        return sathwik
+
+
+"""💻 Cracked another one with my brain and Python!  
+Loved the logic? Drop a ⭐ on this repo — more power to clean coders! 😎  
+#HitmanSathwik #CodeWithStyle"""
