@@ -1,0 +1,10 @@
+class Solution:
+    def differenceOfSums(self, n: int, m: int) -> int:
+        K=0
+        C=0
+        for i in range(1,n+1):
+            if i%m!=0:
+                K=K+i
+            else:
+                C=C+i
+        return K-C
