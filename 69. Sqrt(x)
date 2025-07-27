@@ -1,0 +1,14 @@
+class Solution:
+    def mySqrt(self, x: int) -> int:
+        import math
+        Z=math.sqrt(x)
+        M=str(Z)
+        H=[]
+        for i in M:
+            if i!=".":
+                H.append(i)
+            else:
+                break
+        E="".join(H)
+        return int(E)
+        
