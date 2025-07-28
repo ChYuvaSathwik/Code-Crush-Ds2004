@@ -1,0 +1,14 @@
+A = [10, 20, 30, 40, 50]
+k = 3
+from collections import deque
+
+sathwik = deque()
+
+for i in range(k):
+    sathwik.appendleft(A[i])  
+
+# Add remaining elements
+for m in range(k, len(A)):
+    sathwik.append(A[m])  
+
+print(sathwik)
