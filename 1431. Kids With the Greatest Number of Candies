@@ -1,0 +1,41 @@
+class Solution:
+    def kidsWithCandies(self, candies: List[int], extraCandies: int) -> List[bool]:
+        M=[]
+        c=0
+        UI=[]
+        sathwik=False
+        PO=[]
+        for num in candies:
+            c=num+extraCandies
+            M.append(c)             
+            c=0
+        for i in range(len(M)):
+            for j in range(len(candies)):
+                if M[i]>=candies[j]:
+                    sathwik=True
+                    PO.append(sathwik)
+                else:
+                    sathwik=False
+                    PO.append(sathwik)
+            if False in PO:
+                UI.append(False)
+                PO.clear()
+            else:
+                UI.append(True)
+                PO.clear()
+        return UI
+
+
+"""NOT OPTIMIZED CODE BUT STILL WORKS"""
+"""THIS IS OPTIMIZED CODE"""
+class Solution:
+    def kidsWithCandies(self, candies: List[int], extraCandies: int) -> List[bool]:
+        sathwik=max(candies)
+        King=[]
+        for num in candies:
+            if num+extraCandies>=sathwik:
+                King.append(True)
+            else:
+                King.append(False)
+        return King
+
