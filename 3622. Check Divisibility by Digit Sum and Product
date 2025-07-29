@@ -1,0 +1,18 @@
+class Solution:
+    def checkDivisibility(self, n: int) -> bool:
+        product=1
+        Praneeth=0
+        sathwik=str(n)
+        for i in sathwik:
+            product=int(i)*product
+        for m in sathwik:
+            Praneeth=int(m)+Praneeth
+        Final=Praneeth+product
+        if n%Final==0:
+            return True
+        else:
+            return False
+        
+
+
+        
