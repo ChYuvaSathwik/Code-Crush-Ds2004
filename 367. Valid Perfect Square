@@ -1,0 +1,21 @@
+class Solution:
+    def isPerfectSquare(self, num: int) -> bool:
+        D=(num ** 0.5) % 1
+        if D==0:
+            return True
+        else:
+            return False
+
+
+"""
+import math
+
+num = 25
+square_root = math.pow(num, 0.5)
+D = square_root % 1
+
+if D == 0:
+    return True
+else:
+    return False
+"""
