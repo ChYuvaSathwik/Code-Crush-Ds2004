@@ -1,0 +1,4 @@
+sathwik = [1, 10, 2, 6, 5, 3]
+sathwik.sort(reverse=True)  
+Balu = sathwik[0] * sathwik[1] * sathwik[2] 
+print(Balu)
