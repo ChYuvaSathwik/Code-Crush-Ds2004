@@ -1,0 +1,23 @@
+class Solution:
+    def firstNegInt(self, arr, k):
+        P=[]
+        IO = []
+        for i in range(len(arr) - k + 1):
+            found = False
+            for num in arr[i:i + k]:
+                if num < 0:
+                    P.append(num)
+                    found = True
+                    break
+            if not found:
+                P.append(0)
+        return P
+"""Input: arr[] = [-8, 2, 3, -6, 10] , k = 2
+Output: [-8, 0, -6, -6]
+Explanation:
+Window [-8, 2] First negative integer is -8.
+Window [2, 3] No negative integers, output is 0.
+Window [3, -6] First negative integer is -6.
+Window [-6, 10] First negative integer is -6."""
+
+This code need to optimizec ??
