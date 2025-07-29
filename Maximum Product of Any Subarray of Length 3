@@ -1,0 +1,9 @@
+sathwik=[1,10,2,6,5,3]
+Balu=float("-inf")
+for i in range(len(sathwik)-3+1):
+    Praneeth=sathwik[i:i+3]
+    Product=1
+    for m in Praneeth:
+        Product=Product*m
+    Balu=max(Product,Balu)
+print(Balu)
