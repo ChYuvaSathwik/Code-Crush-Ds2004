@@ -1,0 +1,12 @@
+A="listen"
+B="silent"
+sathwik={}
+Praneeth={}
+for i in A:
+    sathwik[i]=sathwik.get(i,0)+1
+for j in B:
+    Praneeth[j]=Praneeth.get(j,0)+1
+if sathwik==Praneeth:
+    print("ANGRAM")
+else:
+    print("NOT ANGRAM")
