@@ -1,0 +1,14 @@
+class Solution:
+    def scoreOfString(self, s: str) -> int:
+        sathwik=[]
+        Praneeth=[]
+        for i in s:
+            M=ord(i)
+            sathwik.append(M)
+        for p in range(len(s)-1):
+            Z=abs(sathwik[p]-sathwik[p+1])
+            Praneeth.append(Z)
+            Z=0
+        return sum(Praneeth)
+
+        
