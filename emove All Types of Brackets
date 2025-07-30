@@ -1,0 +1,8 @@
+expression = "{(A + B) * [C - D]}"
+result = ""
+
+for char in expression:
+    if char not in "(){}[]":
+        result += char
+
+print(result)
