@@ -1,0 +1,6 @@
+S = "Sathwik123!@# Prince_456"
+M=[]
+for i in S:
+    if i.isalpha():
+        M.append(i)
+print("".join(M))
