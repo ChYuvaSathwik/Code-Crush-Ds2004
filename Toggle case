@@ -1,0 +1,2 @@
+Input="PaPa"
+print(Input.swapcase())
