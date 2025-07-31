@@ -1,0 +1,10 @@
+word="prince balu sathwik"
+King=[]
+Z=word.split()
+for i in Z:
+    if len(i)==1:
+        king.append(i[0].upper())
+    else:
+        RK=i[0].upper()+i[1:-1]+i[-1].upper()
+        King.append(RK)
+print(" ".join(King))
