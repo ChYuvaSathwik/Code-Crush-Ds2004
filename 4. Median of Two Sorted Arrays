@@ -1,0 +1,10 @@
+class Solution:
+    def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
+        sathwik=nums1+nums2
+        sathwik.sort()
+        Praneeth=len(sathwik)
+        if Praneeth%2==1:
+            median=sathwik[Praneeth//2]
+        else:
+            median=(sathwik[Praneeth//2-1]+sathwik[Praneeth//2])/2
+        return median
