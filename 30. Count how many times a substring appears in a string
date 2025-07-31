@@ -1,0 +1,7 @@
+text = "abababa"
+substring = "aba"
+text = input("Enter text ")
+sub = input("Enter substring ")
+
+count = text.count(sub)
+print(count)
