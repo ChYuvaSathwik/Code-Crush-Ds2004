@@ -1,0 +1,20 @@
+class Solution:
+    def frequencySort(self, s: str) -> str:
+        sathwik={}
+        Praneeth=[]
+        Final=[]
+        for i in s:
+            sathwik[i]=sathwik.get(i,0)+1
+        for k in sathwik:
+            Praneeth.append((sathwik[k],k))
+        Bunny=sorted(Praneeth,reverse=True)
+        for o in Bunny:
+            Final.append(o[1]*o[0])
+        return "".join(Final)
+        
+
+
+
+
+
+
