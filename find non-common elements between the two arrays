@@ -8,3 +8,19 @@ set2 = set(arr2)
 
 non_common = list((set1 - set2) | (set2 - set1))
 print(non_common)
+
+
+"""
+A=[123,56,778,89]
+B=[123,775,357,89,56]
+Q=[]
+P=[]
+for i in A:
+    if i not in B:
+        Q.append(i)
+for m in B:
+    if m not in A:
+        P.append(m)
+C=(Q+P)
+C.sort()
+print(C)"""
