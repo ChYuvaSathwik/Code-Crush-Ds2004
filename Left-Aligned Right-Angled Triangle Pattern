@@ -1,0 +1,11 @@
+*
+**
+***
+****
+*****
+
+n=6
+for i in range(n):
+    for m in range(i):
+        print("*",end="")
+    print()
