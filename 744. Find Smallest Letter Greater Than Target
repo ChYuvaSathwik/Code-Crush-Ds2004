@@ -1,0 +1,15 @@
+class Solution:
+    def nextGreatestLetter(self, letters: List[str], target: str) -> str:
+        sathwik=sorted(letters,reverse=False)
+        T=False
+        for i in sathwik:
+            if i>target:
+                T=True
+                break
+            else:
+                T=False
+        if T:
+            return i
+        else:
+            return letters[0]
+            
