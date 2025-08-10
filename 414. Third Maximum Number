@@ -1,0 +1,15 @@
+class Solution:
+    def thirdMax(self, nums: List[int]) -> int:
+        if len(nums)<=2:
+            return max(nums)
+        else:
+            sathwik=sorted(nums,reverse=True)
+            Praneeth=[]
+            for i in sathwik:
+                if i not in Praneeth and len(Praneeth)<3:
+                    Praneeth.append(i)
+            if len(Praneeth)==3:
+                return Praneeth[-1]
+            else:
+                return max(nums)
+    
