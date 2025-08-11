@@ -1,0 +1,36 @@
+class Solution:
+    def mergeAlternately(self, word1: str, word2: str) -> str:
+        sathwik=len(word1)-1
+        Praneeth=len(word2)-1
+        W=len(word1)+len(word2)
+        Balu=[]
+        start=0
+        while len(Balu)<W:
+            if start<=sathwik:
+                Q=word1[start]
+                Balu.append(Q)
+                if start<=Praneeth:
+                    R=word2[start]
+                    Balu.append(R)
+                    start=start+1
+                else:
+                    GH=word1[start+1:]
+                    Balu.append(GH)
+                    break
+            else:
+                E=word2[start:]
+                Balu.append(E)
+                break
+        return "".join(Balu)
+"""i know it is to long but iam still happy to slove by my own in future i will slove this problem  optimed apporch"""
+
+
+
+
+    
+
+
+
+        
+
+        
