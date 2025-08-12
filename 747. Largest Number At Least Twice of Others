@@ -1,0 +1,24 @@
+class Solution:
+    def dominantIndex(self, nums: List[int]) -> int:
+        A=max(nums)
+        sathwik=0
+        w=False
+        for i in nums:
+            if i!=A:
+                sathwik=sathwik+1
+            elif i==A:
+                break
+        R=sathwik
+        for p in nums:
+            if p!=A:
+                if A>=2*p:
+                    w=True
+                else:
+                    w=False
+                    break
+        if w:
+            return R
+        else:
+            return -1
+
+
