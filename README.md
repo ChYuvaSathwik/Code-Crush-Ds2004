@@ -43,10 +43,6 @@ Problems are picked and solved from various platforms:
 └── another_problem.js
 ...
 
-sql
-Copy
-Edit
-
 ## ✅ Daily Tracker
 - ✅ Day 1 - Solved with Two Pointers
 - ✅ Day 2 - Solved using Stack
