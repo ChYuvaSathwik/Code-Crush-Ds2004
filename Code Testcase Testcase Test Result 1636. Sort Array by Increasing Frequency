@@ -1,0 +1,19 @@
+class Solution:
+    def frequencySort(self, nums: List[int]) -> List[int]:
+        sathwik={}
+        Praneeth=[]
+        Q=[]
+        P=[]
+        for i in nums:
+            sathwik[i]=sathwik.get(i,0)+1
+        for k in sathwik:
+            Praneeth.append((sathwik[k],k))
+            Z =sorted(Praneeth, key=lambda x: (x[0], -x[1]))
+        for u,y in Z:
+            Q.append((u,y))
+            for j in range(u):
+                P.append(y)
+        return P
+
+        
+            
