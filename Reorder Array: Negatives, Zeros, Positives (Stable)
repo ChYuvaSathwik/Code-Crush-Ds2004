@@ -1,0 +1,18 @@
+N = int(input())  
+Z = list(map(int, input().split()))  
+
+sathwik = []
+
+for i in range(len(Z)):
+    if Z[i] < 0:
+        sathwik.append(Z[i])
+
+for k in range(len(Z)):
+    if Z[k] == 0:
+        sathwik.append(Z[k])
+
+for S in range(len(Z)):
+    if Z[S] > 0:
+        sathwik.append(Z[S])
+
+print(*sathwik)
