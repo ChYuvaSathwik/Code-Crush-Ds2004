@@ -1,0 +1,23 @@
+class Solution:
+    def maximumSubarraySum(self, nums: List[int], k: int) -> int:
+        sathwik = []
+        
+        for i in range(len(nums) - k + 1):
+            J = nums[i:i+k]
+            P = True   
+            
+            for m in range(len(J)-1):
+                if J[m] != J[m+1]:
+                    P = True
+                else:
+                    P = False
+                    break  
+            
+            if P:
+                T = sum(J)
+                sathwik.append(T)
+        
+        if sathwik:              """it is not a leetcode problem"""
+            return max(sathwik)
+        else:
+            return 0
