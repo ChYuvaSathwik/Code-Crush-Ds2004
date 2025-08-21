@@ -1,0 +1,16 @@
+Input=[1, 2, 1, 3, 4, 2, 3]
+k = 4
+P=[]
+Output=[3, 4, 4, 3]
+
+for i in range(len(Input)-k+1):
+    sathwik=Input[i:i+k]
+    Praneeth=[]
+    
+    for m in sathwik:
+        if m not in Praneeth:
+            Praneeth.append(m)
+    G=len(Praneeth)
+    P.append(G)
+    Praneeth.clear()
+print(P)
