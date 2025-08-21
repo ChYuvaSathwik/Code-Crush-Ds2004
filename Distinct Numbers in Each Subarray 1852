@@ -1,0 +1,13 @@
+def distinctNumbers(Input, k):
+    P=[]
+    for i in range(len(Input)-k+1):
+        sathwik=Input[i:i+k]
+        Praneeth=[]
+        
+        for m in sathwik:
+            if m not in Praneeth:
+                Praneeth.append(m)
+        G=len(Praneeth)
+        P.append(G)
+        Praneeth.clear()
+    return P
