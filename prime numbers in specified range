@@ -1,0 +1,10 @@
+        count=0
+        for i in range(input1,input2+1):
+            sathwik=True
+            for j in range(2,int(i**0.5)+1):
+                if i%j==0:
+                    sathwik=False
+                    break
+            if sathwik:
+                count=count+1
+        return co
