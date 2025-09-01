@@ -1,0 +1,39 @@
+class Solution:
+    def plusOne(self, digits: List[int]) -> List[int]:
+        I=[]
+        J=[]
+        A=""
+        K=0
+        if len(digits)>1 and digits[-1]!=9:
+            H=digits[-1]+1
+            digits.pop()
+            digits.append(H)
+            return digits
+        elif digits[-1]==9:
+            for i in digits:
+                A=A+str(i)
+            Q=int(A)+1
+            for ds in str(Q):
+                J.append(int(ds))
+            return J
+            
+        else:
+            G=digits[-1]+1
+            Z=str(G)
+            for S in Z:
+                I.append(int(S))
+            return I
+
+
+
+            
+
+
+
+        
+
+                
+
+
+         
+        
