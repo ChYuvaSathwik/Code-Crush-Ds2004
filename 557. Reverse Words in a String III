@@ -1,0 +1,8 @@
+class Solution:
+    def reverseWords(self, s: str) -> str:
+        sathwik=list(s.split())
+        P=[]
+        for i in sathwik:
+            Z=i[::-1]
+            P.append(Z)
+        return " ".join(P)
