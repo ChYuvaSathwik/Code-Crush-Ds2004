@@ -1,0 +1,14 @@
+class Solution:
+    def uncommonFromSentences(self, s1: str, s2: str) -> List[str]:
+        sathwik={}
+        K=[]
+        s1=s1.split()
+        s2=s2.split()
+        for i in s1:
+            sathwik[i]=sathwik.get(i,0)+1
+        for l in s2:
+            sathwik[l]=sathwik.get(l,0)+1
+        for a in sathwik:
+            if sathwik[a]==1:
+                K.append(str(a))
+        return K
