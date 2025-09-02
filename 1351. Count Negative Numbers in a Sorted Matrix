@@ -1,0 +1,9 @@
+class Solution:
+    def countNegatives(self, grid: List[List[int]]) -> int:
+        sathwik=0
+        for i in grid:
+            for k in i:
+                if k<0:
+                    sathwik=sathwik+1
+        return sathwik
+
