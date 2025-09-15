@@ -1,0 +1,21 @@
+class Solution:
+    def canBeTypedWords(self, text: str, brokenLetters: str) -> int:
+        sathwik=text.split()
+        V=set(brokenLetters)
+        A=False
+        U=0
+        for i in sathwik:
+            for l in i:
+                if l not in V:
+                    A=True
+                else:
+                    A=False
+                    break
+            if A:
+                U=U+1
+            else:
+                A=True
+        return U
+
+
+        
