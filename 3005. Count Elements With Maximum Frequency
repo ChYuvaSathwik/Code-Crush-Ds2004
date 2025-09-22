@@ -1,0 +1,26 @@
+class Solution:
+    def maxFrequencyElements(self, nums: List[int]) -> int:
+        Praneeth=[]
+        B=[]
+        for gh in nums:
+            if gh not in Praneeth:
+                Praneeth.append(gh)
+        if len(Praneeth)==len(nums):
+            return len(Praneeth)
+        else:
+            sathwik={}
+            A=0
+            H=0
+            for i in nums:
+                sathwik[i]=sathwik.get(i,0)+1
+            for o in sathwik:
+                B.append(sathwik[o])
+            NJ=max(B)
+            count=0
+            for df in B:
+                if df==NJ:
+                    count=count+1
+            XCV=NJ*count
+            return XCV
+
+        
