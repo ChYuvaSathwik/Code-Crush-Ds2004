@@ -1,0 +1,10 @@
+nums = [4, 2, 7, 10]
+nums.sort()
+sathwik=len(nums)
+if sathwik%2==1:
+    Praneeth=sathwik//2
+    print(nums[Praneeth])
+else:
+    Balu=sathwik//2
+    Z=(nums[Balu]+nums[Balu-1])/2
+    print(Z)
