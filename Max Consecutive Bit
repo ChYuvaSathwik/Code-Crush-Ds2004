@@ -1,0 +1,33 @@
+class Solution:
+    def maxConsecBits(self, arr):
+        count1=0
+        count2=0
+        A=[]
+        B=[]
+        for i in range(len(arr)):
+            if arr[i]==0:
+                count1=count1+1
+            else:
+                A.append(count1)
+                count1=0
+        A.append(count1)
+        for j in range(len(arr)):
+            if arr[j]==1:
+                count2=count2+1
+            else:
+                B.append(count2)
+                count2=0
+        B.append(count2)
+        sathwik=max(A)
+        Praneeth=max(B)
+        if sathwik>Praneeth:
+            return sathwik
+        else:
+            return Praneeth
+                
+                
+      
+                    
+            
+            
+            
