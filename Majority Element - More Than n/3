@@ -1,0 +1,12 @@
+class Solution:
+    def findMajority(self, arr):
+        sathwik={}
+        A=[]
+        N1=len(arr)//3
+        for i in arr:
+            sathwik[i]=sathwik.get(i,0)+1
+        for gh in sathwik:
+            if sathwik[gh]>N1:
+                A.append(gh)
+        A.sort()
+        return A
