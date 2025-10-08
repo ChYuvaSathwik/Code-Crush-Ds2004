@@ -1,0 +1,19 @@
+class Solution:
+    def binarysearch(self, arr, k):
+        Count=0
+        S=False
+        for i in range(len(arr)):
+            if arr[i]==k:
+                S=True
+                break
+            else:
+                Count=Count+1
+        if S:
+            return Count
+        else:
+            return -1
+                
+        
+        
+        
+        "NEED TO DO IN BINARY SEARCH"
