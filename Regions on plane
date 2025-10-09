@@ -1,0 +1,5 @@
+def lines(N):
+    sathwik=(N*(N+1)//2+1)
+    return sathwik
+N=int(input())
+print(lines(N))
