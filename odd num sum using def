@@ -1,0 +1,12 @@
+def number(n,arr):
+    count1=0
+    for i in range(n):
+        if arr[i]%2==1:
+            count1=count1+arr[i]
+    return count1
+n=int(input())
+arr=[]
+for _ in range(n):
+    sathwik=int(input())
+    arr.append(sathwik)
+print(number(n,arr))
