@@ -1,0 +1,16 @@
+def best(arr):
+    if not arr or len(arr)<=3:
+        return 0
+    even=[]
+    odd=[]
+    for i in range(len(arr)):
+        if i%2==0:
+            even.append(arr[i])
+        else:
+            odd.append(arr[i])
+    X1=sorted(even,reverse=True)
+    X2=sorted(odd,reverse=False)
+    return X1[1]+X2[1]
+
+arr=list(map(int,input().split()))
+print(best(arr))
