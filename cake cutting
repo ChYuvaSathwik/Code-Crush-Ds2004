@@ -1,0 +1,6 @@
+def cake(N):
+    MOD = 1000000007
+    sathwik=(N*(N+1))//2+1
+    return sathwik%MOD
+N=int(input())
+print(cake(N))
