@@ -1,0 +1,16 @@
+def smallest_product(sum_value, Arr):
+    if len(Arr) < 2:
+        return -1
+    rt = sorted(Arr)
+    if rt[0] + rt[1] <= sum_value:
+        return rt[0] * rt[1]
+    else:
+        return 0
+
+sum_value = int(input())          
+Arr = list(map(int, input().split()))   
+print(smallest_product(sum_value, Arr))
+
+
+
+"""https://prepinsta.com/accenture-coding-question-3/"""
