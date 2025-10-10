@@ -1,0 +1,21 @@
+def topper1(n,marks):
+    sathwik=[]
+    count1=0
+    Praneeth={}
+    for i in range(n):
+        sathwik.append(marks[i])
+    for h in sathwik:
+        Praneeth[h]=Praneeth.get(h,0)+1
+    for rt in Praneeth:
+        if Praneeth[rt]>1:
+            df=Praneeth[rt]-1
+            count1=df+count1
+    return count1
+n=int(input())
+marks=[]
+for hp in range(n):
+    pl=int(input())
+    marks.append(pl)
+print(topper1(n,marks))
+
+
