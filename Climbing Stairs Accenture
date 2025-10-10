@@ -1,0 +1,9 @@
+def climbing(N,M):
+    if N%M==0:
+        return N//M
+    else:
+        R=(N//M)+1
+        return R
+N,M=map(int,input().split())
+print(climbing(N,M))
+
