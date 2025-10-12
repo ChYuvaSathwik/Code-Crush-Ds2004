@@ -1,0 +1,28 @@
+def cost(sathwik):
+    balu = "aeiou"
+    Praneeth = []
+
+    for target in balu:
+        klassan = {}
+        count1 = 0
+        count2 = 0
+
+        for i in range(len(sathwik)):
+            ch = sathwik[i]
+
+            if ch in balu and ch == target:
+                pass
+            elif ch not in balu:
+                count2 += 10
+            else:
+                klassan[ch] = klassan.get(ch, 0) + 1
+                if klassan[ch] == 1:
+                    count1 += abs(ord(ch) - ord(target))
+
+        Praneeth.append(count1 + count2)
+
+    finaly = min(Praneeth)
+    return finaly
+
+sathwik = input()
+print(cost(sathwik))
