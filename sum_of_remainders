@@ -1,0 +1,9 @@
+def remainder(n,div):
+    count1=0
+    for i in range(1,n+1):
+        sathwik=i%div
+        count1=count1+sathwik
+    return count1
+n,div=map(int,input().split())
+print(remainder(n,div))
+
