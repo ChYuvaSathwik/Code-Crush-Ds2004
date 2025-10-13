@@ -1,0 +1,15 @@
+def nearestnumber(n):
+    sathwik=len(n)
+    m=[]
+    if sathwik<1:
+        p="null"
+        return p
+    for i in range(sathwik):
+        for j in range(sathwik):
+            if n[i]>n[j] and j>i:
+                m.append(n[j])
+                break
+    m.append(-1)
+    return m
+n=list(map(int,input().split()))
+print(nearestnumber(n))
