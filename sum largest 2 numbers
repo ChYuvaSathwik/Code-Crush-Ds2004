@@ -1,0 +1,19 @@
+def largestPair(sathwik):
+    balu=len(sathwik)
+    th=float("-inf")
+    for i in range(balu):
+        for j in range(balu):
+            if i!=j:
+                cp=sathwik[i]+sathwik[j]
+                th=max(cp,th)
+    return th
+sathwik=list(map(int,input().split()))
+print(largestPair(sathwik)
+
+
+"""def largestPair(sathwik):
+    sathwik.sort()
+    return sathwik[-1] + sathwik[-2]
+
+sathwik = list(map(int, input().split()))
+print(largestPair(sathwik))"""
