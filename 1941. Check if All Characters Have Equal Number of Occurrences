@@ -1,0 +1,23 @@
+class Solution:
+    def areOccurrencesEqual(self, s: str) -> bool:
+        sathwik={}
+        U=[]
+        H=False
+        for i in s:
+            sathwik[i]=sathwik.get(i,0)+1
+        for k in sathwik:
+            U.append(sathwik[k])
+        B=U[0]
+        for f in U:
+            if f==B:
+                H=True
+            else:
+                return False
+        if H:
+            return True
+            
+
+
+        
+            
+        
