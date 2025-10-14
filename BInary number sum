@@ -1,0 +1,10 @@
+def sathwik(n):
+    sathwik=bin(n)
+    praneeth=str(sathwik)
+    count1=0
+    for i in praneeth:
+        if i=="1":
+            count1=count1+1
+    return count1
+n=int(input())
+print(sathwik(n))
