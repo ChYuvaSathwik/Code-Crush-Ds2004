@@ -1,0 +1,19 @@
+class Solution:
+    def getCommon(self, nums1: List[int], nums2: List[int]) -> int:
+        sathwik1=set()
+        sathwik2=set()
+        for i in nums1:
+            sathwik1.add(i)
+        for k in nums2:
+            sathwik2.add(k)
+        Z=sathwik1.intersection(sathwik2)
+        if Z:
+            return min(Z)
+        else:
+            return -1
+
+
+
+
+        
+        
