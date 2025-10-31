@@ -1,0 +1,16 @@
+class Solution:
+    def getSneakyNumbers(self, nums: List[int]) -> List[int]:
+        sathwik={}
+        pl=[]
+        for i in nums:
+            sathwik[i]=sathwik.get(i,0)+1
+        for j in sathwik:
+            if sathwik[j]==2:
+                pl.append(j)
+        return pl
+        
+
+
+
+        
+        
