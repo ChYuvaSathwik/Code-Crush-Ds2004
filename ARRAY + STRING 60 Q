@@ -1,0 +1,8 @@
+def sathwik(n):
+    x=n[::-1]
+    if x==n:
+        return "Palindrome"
+    else:
+        return "Not Palindrome"
+n=input()
+print(sathwik(n))
