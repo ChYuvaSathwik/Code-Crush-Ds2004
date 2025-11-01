@@ -182,5 +182,47 @@ def start_end(N):
 N=input()
 print(start_end(N))
 
-STILL LOADING GUYS I WILL TAKE SOME BREAK
+def substring(N,v):
+    count1=0
+    b=len(v)
+    for i in range(len(N)-b+1):
+        sathwik=N[i:i+b]
+        if sathwik==v:
+            count1=count1+1
+    return count1
+N=input()
+v=input()
+print(substring(N,v))
 
+def duplicates(N):
+    sathwik={}
+    h=[]
+    for i in N:
+        sathwik[i]=sathwik.get(i,0)+1
+    for k in sathwik:
+        if sathwik[k]>=1:
+            h.append(k)
+    return "".join(h)
+N=input()
+print(duplicates(N))
+or
+def duplicates(N):
+    seen = set()
+    h = []
+    for i in N:
+        if i not in seen:
+            seen.add(i)
+            h.append(i)
+    return "".join(h)
+
+N = input()
+print(duplicates(N))
+
+def Angrams(N,h):
+    if sorted(N)==sorted(h):
+        return "ANGRAM"
+    else:
+        return "NOT ANGRAM"
+N=input()
+h=input()
+print(Angrams(N,h))
