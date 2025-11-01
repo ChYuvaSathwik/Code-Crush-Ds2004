@@ -6,3 +6,181 @@ def sathwik(n):
         return "Not Palindrome"
 n=input()
 print(sathwik(n))
+
+
+def occur(sathwik,n):
+    h={}
+    for i in sathwik:
+        h[i]=h.get(i,0)+1
+    for k in h:
+        if k==n:
+            return h[k]
+sathwik=input()
+n=input()
+print(occur(sathwik,n))
+
+
+def word_count(n):
+    s=n.split()
+    count1=0
+    for i in s:
+        count1=count1+1
+    return count1
+n=input()
+print(word_count(n))
+
+
+def reverse_word(n):
+    m=n.split()
+    b=[]
+    for i in m:
+        h=i[::-1]
+        b.append(h)
+    v=" ".join(b)
+    return v
+n=input()
+print(reverse_word(n))
+
+
+
+def vcs(n):
+    hi="aeiouAEIOU"
+    vowel=0
+    consonent=0
+    space=0
+    for i in n:
+        if i in hi:
+            vowel=vowel+1
+        elif i not in hi and i!=" ":
+            consonent=consonent+1
+        else:
+            space=space+1
+    return f"vowels:{vowel}\nconsonent:{consonent}\nspaces:{space}"
+n=input()
+print(vcs(n))
+
+def ASII_1(N):
+    m=ord(N)
+    return m
+N=input()
+print(ASII_1(N))
+
+
+def remove_vowel(N):
+    X="aeiouAEIOU"
+    k=[]
+    for i in N:
+        if i not in X:
+            k.append(i)
+    B="".join(k)
+    return B
+N=input()
+print(remove_vowel(N))
+
+
+
+def spaces_remove(N):
+    k=[]
+    for i in N:
+        if i!=" ":
+            k.append(i)
+    return "".join(k)
+N=input()
+print(spaces_remove(N))
+
+
+def remove_char(N):
+    k=[]
+    for i in N:
+        if i.isalpha():
+            k.append(i)
+    return "".join(k)
+N=input()
+print(remove_char(N))
+
+
+def reverse(N):
+    N=N[::-1]
+    return N
+N=input()
+print(reverse(N))
+
+def brackets(N):
+    h="{}[]()"
+    m=[]
+    for i in N:
+        if i not in h:
+            m.append(i)
+    return "".join(m)
+N=input()
+print(brackets(N))
+
+
+def number_sum_string(N):
+    count1=0
+    for i in N:
+        if i.isdigit():
+            B=int(i)
+            count1=count1+B
+    return count1
+N=input()
+print(number_sum_string(N))
+
+
+def upp_low(N):
+    M=N.upper()
+    G=N.lower()
+    upper1=0
+    lower1=0
+    for i in N:
+        if i in M and i.isalpha():
+            upper1=upper1+1
+        elif i.isalpha() and i in G:
+
+            lower1=lower1+1
+    return f"uppercase:{upper1}\nLowercase:{lower1}"
+N=input()
+print(upp_low(N))
+
+
+def toggle_case(N):
+    K=[]
+    for i in N:
+        if i.isupper():
+            M=i.lower()
+            K.append(M)
+        elif i.islower():
+            FG=i.upper()
+            K.append(FG)
+        else:
+            K.append(i)
+    return "".join(K)
+N=input()
+print(toggle_case(N))
+
+
+def pangarm(N):
+    s=[]
+    N=N.upper()
+    for i in N:
+        if i.isalpha():
+            s.append(i)
+    b=set(s)
+    if len(b)==26:
+        return "Pangram"
+    else:
+        return "not Pangram"
+N=input()
+print(pangarm(N))
+
+
+def start_end(N):
+    if N[0]==N[-1]:
+        return "YES"
+    else:
+        return "NO"
+N=input()
+print(start_end(N))
+
+STILL LOADING GUYS I WILL TAKE SOME BREAK
+
