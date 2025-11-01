@@ -223,6 +223,31 @@ def Angrams(N,h):
         return "ANGRAM"
     else:
         return "NOT ANGRAM"
+
+def duplicate_words(N):
+    N=N.split()
+    sathwik=set()
+    L=[]
+    for i in N:
+        if i not in sathwik:
+            L.append(i)
+            sathwik.add(i)
+    return " ".join(L)
+N=input()
+print(duplicate_words(N))
+
 N=input()
 h=input()
 print(Angrams(N,h))
+
+
+def longest_word(N):
+    N = N.split()
+    b = ""
+    for i in N:
+        if len(i) > len(b):
+            b = i
+    return b
+N=input()
+print(longest_word(N))
+"TM WE WILL MEET AGAIN BRO ITS TIME FOR MY SQL""
