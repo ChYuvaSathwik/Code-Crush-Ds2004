@@ -1,0 +1,13 @@
+class Solution:
+    def getSecondLargest(self, arr):
+        sathwik=set()
+        k=[]
+        for i in arr:
+            if i not in sathwik:
+                sathwik.add(i)
+                k.append(i)
+        if len(k)>1:
+            f=sorted(k,reverse=True)
+            return f[1]
+        else:
+            return -1
