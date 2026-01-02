@@ -1,0 +1,57 @@
+class Node:
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+class SingleLinkedList:
+    def __init__(self):
+        self.head=None
+    def insert_end(self,data):
+        N1=Node(data)
+        if self.head is None:
+            self.head=N1
+        else:
+            temp=self.head
+            while temp.next:
+                temp=temp.next
+            temp.next=N1
+    def insert_begin(self,data):
+        N2=Node(data)
+        temp=self.head
+        N2.next=self.head
+        self.head=N2
+    def insert_desired(self,data,pos):
+        if self.head is None or pos==1:
+            N3=Node(data)
+            N3.next=self.head
+            self.head=N3
+            return
+        else:
+            N3=Node(data)
+            temp=self.head.next
+            prev=self.head
+            for i in range(0,pos-2):
+                if temp is None:
+                    break
+                temp=temp.next
+                prev=prev.next
+            prev.next=N3
+            N3.next=temp
+
+    def display(self):
+        if self.head is None:
+            print("Linked List Empty")
+        else:
+            temp=self.head
+            while temp:
+                print(temp.data,end="->")
+                temp=temp.next
+            print("None")
+L=SingleLinkedList()
+M=int(input("enter the number of nodes"))
+for i in range(M):
+    value=int(input())
+    L.insert_end(value)
+L.insert_begin(6)
+L.insert_end(90)
+L.insert_desired(70,3)
+L.display()
