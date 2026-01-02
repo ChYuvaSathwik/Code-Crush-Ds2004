@@ -1,0 +1,32 @@
+class Node:
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+class SingleLinkedList:
+    def __init__(self):
+        self.head=None
+    def insert_end(self,data):
+        N1=Node(data)
+        if self.head is None:
+            self.head=N1
+        else:
+            temp=self.head
+            while temp.next:
+                temp=temp.next
+            temp.next=N1
+    def display(self):
+        if self.head is None:
+            print("Empty LinkedList")
+        else:
+            temp=self.head
+            while temp:
+                print(temp.data,end="->")
+                temp=temp.next
+            print("None")
+L=SingleLinkedList()
+sathwik=int(input())
+for i in range(sathwik):
+    value=int(input())
+    L.insert_end(value)
+
+L.display()
