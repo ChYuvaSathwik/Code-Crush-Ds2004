@@ -1,0 +1,12 @@
+A="hello world"
+sathwik=[]
+Praneeth=A.split()
+for i in Praneeth:
+    if len(i)==1:
+        sathwik.append(i.upper())
+    elif len(i)==2:
+        sathwik.append(i.upper())
+    else:
+        n=len(i)
+        sathwik.append(i[0].upper()+i[1:n-1]+i[n-1].upper())
+print(" ".join(sathwik))
