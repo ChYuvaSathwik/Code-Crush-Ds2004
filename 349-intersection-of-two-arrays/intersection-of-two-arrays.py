@@ -3,7 +3,7 @@ class Solution:
         set1=set()
         p=[]
         for i in set(nums1):
-            if i in nums2 and i not in set1:
+            if i in set(nums2) and i not in set1:
                 p.append(i)
                 set1.add(i)
         return p
