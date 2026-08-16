@@ -9,8 +9,6 @@ class Solution:
             L=prefix-k
             if L in sathwik:
                 count1=count1+sathwik[L]
-            if prefix in sathwik:
-                sathwik[prefix]=sathwik[prefix]+1
-            else:
-                sathwik[prefix]=1
+            
+            sathwik[prefix]=sathwik.get(prefix,0)+1
         return count1
