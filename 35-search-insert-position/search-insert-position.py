@@ -8,25 +8,10 @@ class Solution:
             if nums[mid]==target:
                 s=mid
                 found=True
-                break
+                return s
             elif nums[mid]>target:
                 right=mid-1
             else:
                 left=mid+1
-        
-        if found:
-            return s
-        else:
-            sathwik=0
-            M=False
-            for i in nums:
-                if target>i:
-                    sathwik=sathwik+1
-                else:
-                    M=True
-                    break
-            if M:
-                return sathwik
-            else:
-                return sathwik
-            
+        if not found:
+            return left
